@@ -102,6 +102,59 @@ li
          background-repeat: no-repeat
          h3
             color: $active-color
+.footer
+    margin-top: 60px
+    background-color: $dark
+    color: $footer-text
+    padding: 59px 0
+    &-policy-link
+        font-size: 12px
+    &-contacts-address
+        font-style: normal
+    &-contacts
+        text-align: right
+        &-phone
+            font-size: 20px
+            color: $active-color
+    p
+        margin-bottom: 14px
+    a
+        color: $footer-text
+        text-decoration: none
+        &:hover
+            color: $white
+    &-social-links
+        @extend .footer-contacts
+        li
+            display: inline-block
+            margin-left: 10px
+            a
+                display: inline-block
+                width: 35px
+                height: 35px
+                background-color: rgba($white, 0.1)
+                text-align: center
+                line-height: 35px
+                border-radius: 50%
+                color: lighten($footer-text, 30%)
+                font-size: 16px
+                transition: all 0.2s
+                &:hover
+                    background-color: rgba($white, 0.9)
+                    color: $dark
+                    
+
+    small
+        display: block
+        margin-top: 56px
+        line-height: 16px
+        font-size: 10px
+        max-width: 80%
+
+ul
+    li
+        line-height: 32px
+
 
 
 
