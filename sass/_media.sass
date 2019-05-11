@@ -1,0 +1,71 @@
+@media (max-width:767px)
+    html
+        font-size: 5px
+    .top-nav
+        &_btn
+            display: block
+        &-menu
+            flex-direction: column
+            display: none
+            &__active
+                display: flex
+                margin-bottom: 0
+            li
+                line-height: 2
+                a
+                    &::after
+                        display: none
+    .left-sidebar
+        &_object
+            display: none
+        &_btn
+            display: block
+        &_menu
+            display: none
+            &__active
+                display: block
+    .copy
+        text-align: center
+        small
+            margin: 36px auto
+    .footer
+        &-contacts
+            text-align: left
+
+@media (min-width:768px) and (max-width:991px) 
+    html
+        font-size: 5px
+    .top-nav
+        &_btn
+            display: block
+        &-menu
+            display: none
+            &__active
+                display: flex
+                margin-bottom: 0
+                justify-content: space-around
+            li
+                margin-right: 0
+                line-height: 2
+                a
+                    &::after
+                        display: none
+    .left-sidebar
+        &_object
+            display: none
+        &_btn
+            display: block
+        &_menu
+            display: none
+            &__active
+                display: block
+    .footer
+        &-contacts
+            text-align: left
+
+@media (min-width:768px) and (max-width:1199px)
+
+    .left-sidebar
+        &_object
+            display: none
+

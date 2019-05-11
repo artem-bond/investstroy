@@ -19,14 +19,17 @@
       <header class="header">
       <div class="container">
       <div class="row top-nav justify-content-between align-items-center">
-      <div class="col-md-auto col-sm-12 col-xs-12">
+      <div class="col-xl-auto">
       <div class="logo">
       <img src="img/Logo.png" alt="Building Investment">
       </div>
       </div>
       <!-- /.col-md -->
-      <div class="col-md-auto">
+      <div class="col-xl-auto">
       <nav class="nav">
+        <button class="top-nav_btn">
+            <i class="fas fa-bars"></i>
+        </button>
       <ul class="top-nav-menu">
         <li><a href="#">Main</a></li>
         <li><a href="#">About</a></li>
@@ -47,8 +50,9 @@
     <!-- header -->
     <div class="container">
     <div class="row">
-        <div class="col-md-4">
+        <div class="col-lg-4">
         <div class="left-sidebar">
+          <div class="left-sidebar_btn">Сategories</div>
             <ul class="left-sidebar_menu">
               <li><a href="#">Land area</a></li>
               <li><a href="#">Residential property</a></li>
@@ -77,7 +81,7 @@
         </div>
         <!-- left sidebar -->
         </div>
-        <div class="col-md-8">
+        <div class="col-lg-8">
           <div class="content">
             <h2>Building Investment</h2>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est sunt delectus distinctio, perspiciatis aliquam,
@@ -128,7 +132,7 @@
     <footer class="footer">
       <div class="container">
         <div class="row">
-          <div class="col-md-4">
+          <div class="col-lg-4">
             <div class="copy">
               <p>Copyright © 2014-2019</p>
               <a href="#" class="footer-policy-link">Privacy policy</a>
@@ -136,7 +140,7 @@
             </div>
           </div>
           <!-- /.col-md -->
-          <div class="col-md">
+          <div class="col-lg-2 col-6">
             <nav class="nav">
               <ul class="footer-menu">
               <li><a href="#">Main</a></li>
@@ -149,7 +153,7 @@
               </nav>
           </div>
           <!-- /.col-md -->
-          <div class="col-md-2">
+          <div class="col-lg col-6">
             <ul class="footer_menu">
               <li><a href="#">Land area</a></li>
               <li><a href="#">Residential property</a></li>
@@ -161,7 +165,7 @@
           </ul>
           </div>
           <!-- /.col-md -->
-          <div class="col-md">
+          <div class="col-lg">
             <div class="footer-contacts">
               <p class="footer-contacts-phone">8 (800) 850-50-50</p>
               <address class="footer-contacts-address">Mr A Smith 3a High Street Hedge End SOUTHAMPTON SO31 4NG</address>
@@ -192,8 +196,34 @@
         arrows: false,
         dots: true,
         slidesToShow: 4,
-        slidesToScroll: 1
+        slidesToScroll: 1,
+        responsive: [
+          {
+            breakpoint: 1024,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+            }
+          }
+        ]
       });
+    </script>
+    <script>
+    $(document).ready(function() {
+      var menuBtn = $('.top-nav_btn');
+      var sidebarBtn = $('.left-sidebar_btn');
+      var menu = $('.top-nav-menu');
+      var sidebarMenu = $('.left-sidebar_menu');
+      menuBtn.on('click', function(event) { 
+        event.preventDefault();
+        menu.toggleClass('top-nav-menu__active');
+      });
+      sidebarBtn.on('click', function(event) { 
+        event.preventDefault();
+        sidebarMenu.toggleClass('left-sidebar_menu__active');
+      });
+
+    });
     </script>
 
   </body>

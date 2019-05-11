@@ -5,14 +5,17 @@
 @import 'slick-theme'
 // reset
 @import 'reset'
+// media
+@import 'media'
 
 html
-    font-size: 14px
+    font-size: 10px
 body
     background-color: $body-bg
     color: $dark
     font-family: 'Roboto', sans-serif
     padding-top: 40px
+    font-size: 14px
 a
     color: $active-color
 h2
@@ -25,12 +28,26 @@ li
 .top-nav
     background-color: $white
     padding: 15px
+    position: relative
+    &_btn
+        display: none
+        width: 30px
+        height: 30px
+        background-color: transparent
+        border: none
+        font-size: 18px
+        position: absolute
+        right: 15px
+        top: -50px
+        &:hover
+            cursor: pointer
     &-menu
         display: flex
         li
             margin-right: 45px
             a
                 text-transform: uppercase
+                text-decoration: none
                 color: $dark
                 font-weight: 700
                 &::after
@@ -42,13 +59,31 @@ li
                     transform: translateY(37px) scale(0)
                     transition: all 0.2s
                 &:hover
-                    text-decoration: none
                     &::after
                         transform: translateY(37px) scale(1)
 .left-sidebar
+    margin-top: 4rem
+    &_btn
+        display: none
+        background-color: $white
+        padding: 15px
+        position: relative
+        &:hover
+            cursor: pointer
+        &::after
+            content: ''
+            display: inline-block
+            position: absolute
+            top: 50%
+            margin-top: -10px
+            right: 15px
+            width: 15px
+            height: 15px
+            border-bottom: 2px solid $dark
+            border-right: 2px solid $dark
+            transform: rotate(45deg)
     &_menu
         background-color: $white
-        margin-top: 40px
         li
             padding: 15px 29px
             &:first-child
@@ -154,6 +189,8 @@ li
 ul
     li
         line-height: 32px
+// media
+@import 'media'
 
 
 
