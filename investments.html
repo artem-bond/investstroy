@@ -11,6 +11,7 @@
     <script src="./js/all.js"></script>
     <!-- Font -->
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="css/powerange.min.css">
     <!-- Custom styles -->
     <link rel="stylesheet" href="css/style.css">
     <title>Building Investment</title>
@@ -81,7 +82,7 @@
         </div>
         <div class="col-lg-8">
           <div class="content">
-            <h2>Building Investment</h2>
+            <h2>For investors</h2>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est sunt delectus distinctio, perspiciatis aliquam,
               quidem fugit officia sapiente excepturi mollitia soluta accusamus eveniet! Praesentium quasi deleniti soluta
               nesciunt ipsum? Provident asperiores voluptates magnam molestiae unde harum autem reiciendis aliquid totam,
@@ -99,9 +100,82 @@
               qui ad. Numquam architecto ab quam, enim omnis, deserunt saepe laboriosam perferendis exercitationem voluptatem
               nihil quae illum voluptatibus voluptatum.Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem
               corporis minima deserunt, eos omnis vel in mollitia culpa maxime deleniti temporibus voluptatum aperiam ratione</p>
-              <a href="#" class="btn btn-primary">more details about company</a>
           </div>
           <!-- content -->
+          <div class="calc">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="calc-programs">
+                  <div class="calc-radio">
+                    <input type="radio" data-month="6" data-per="0.2" checked name="programs" id="first">
+                    <label for="first">
+                    <span>20% per annum <small>for 6 months</small></span>
+                  </label>
+                </div>
+                <!-- calc-radio -->
+                  <div class="calc-radio">
+                    <input type="radio" data-month="12" data-per="0.24" name="programs" id="second">
+                    <label for="second">
+                    <span>24% per annum <small>for 1 year</small></span>
+                  </label>
+                </div>
+                <!-- calc-radio -->
+                  <div class="calc-radio">
+                    <input type="radio" data-month="24" data-per="0.26" name="programs" id="third">
+                    <label for="third">
+                    <span>26% per annum <small>for 2 years</small></span>
+                  </label>
+                </div>
+                <!-- calc-radio -->
+                  <div class="calc-radio">
+                    <input type="radio" data-month="36" data-per="0.28" name="programs" id="fourth">
+                    <label for="fourth">
+                    <span>28% per annum <small>for 3 years</small></span>
+                  </label>
+                </div>
+                <!-- calc-radio -->
+                  <div class="calc-radio">
+                    <input type="radio" data-month="48" data-per="0.32" name="programs" id="fifth">
+                    <label for="fifth">
+                    <span>32% per annum <small>for 4 years</small></span>
+                  </label>
+                  <div class="calc-popular">
+                      Popular programme
+                </div>
+                <!-- calc-programme -->
+                </div>
+                <!-- calc-radio -->
+                </div>
+                <div class="calc-legal">
+                    <p>
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint velit repellendus dicta. Dolores quasi mollitia, laborum dolorem similique in excepturi veniam quaerat optio voluptates sint dignissimos illo harum provident rem.
+                    </p>
+              </div>
+            </div>
+            <!-- /.col-md-6 -->
+            <div class="col-md-6">
+                <h4>Specify the sum of investments</h4>
+                <input type="text" class="calc-range" name="sum">
+                <div class="calc-sum_invest">
+                  <span class="calc-sum_invest_label">Sum:</span>
+                  <span class="calc-sum_invest_num"><span>100 000</span></span>
+                </div>
+                <div>
+                  <span class="calc-total">
+                    <strong><span id="total">110 000</span></strong><br>
+                    <small>Sum after <span id="month">36</span> months</small>
+                  </span>
+                  <span class="calc-monthly">
+                    <strong><span>32 000</span></strong><br>
+                    <small>Monthly income</small>
+                  </span>
+                </div>
+              </div>
+               <!-- /.col-md-6 -->
+          </div>
+          <!-- /.row -->
+          </div>
+          <!-- /.calc -->
           <div class="directions">
             <h2>Activities</h2>
             <div class="direction-blocks">
@@ -189,5 +263,6 @@
     <script>window.jQuery || document.write('<script src="js/jquery-3.2.1.min"><\/script>')</script>
     <script src="js/slick.min.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/powerange.min.js"></script>
   </body>
 </html>
